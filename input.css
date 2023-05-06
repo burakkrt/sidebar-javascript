@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.icon-xl {
+  font-size: 42px !important;
+}
+
+.sidebar {
+  background-color: #DBDFEA;
+}
+
+.color-purple {
+  color: #8294C4;
+}
