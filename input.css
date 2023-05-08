@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.icon-xl {
+  font-size: 42px !important;
+}
+
+.sidebar-overlay {
+  z-index: -999;
+}
+
+.sidebar-overlay.overlay-show {
+  z-index: 999 !important;
+  background-color: rgb(45, 39, 39, 0.4);
+}
+
+.sidebar {
+  background-color: #DBDFEA;
+  transform: translateX(-100%);
+  z-index: 1000;
+}
+
+.sidebar-show {
+  transform: translateX(0);
+}
+
+.sidebar-toggle {
+  z-index: 1001;
+}
+
+.color-purple {
+  color: #8294C4;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100% !important;
+  }
+
+  .sidebar-toggle span {
+    color: black !important;
+  }
+}
