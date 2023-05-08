@@ -8,6 +8,12 @@
 
 .sidebar {
   background-color: #DBDFEA;
+  transform: translateX(-100%);
+  z-index: 1000;
+}
+
+.sidebar-show {
+  transform: translateX(0);
 }
 
 .color-purple {
