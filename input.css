@@ -12,10 +12,20 @@
   z-index: 1000;
 }
 
+.sidebar-toggle {
+  z-index: 1001;
+}
+
 .sidebar-show {
   transform: translateX(0);
 }
 
 .color-purple {
   color: #8294C4;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100% !important;
+  }
 }
