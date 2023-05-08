@@ -594,12 +594,12 @@ video {
   margin-bottom: 1rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .flex {
   display: flex;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .h-screen {
@@ -608,6 +608,10 @@ video {
 
 .w-4\/5 {
   width: 80%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .-translate-y-1\/2 {
@@ -659,19 +663,9 @@ video {
   text-align: center;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-xl {
@@ -728,18 +722,27 @@ video {
   font-size: 42px !important;
 }
 
+.sidebar-overlay {
+  z-index: -999;
+}
+
+.sidebar-overlay.overlay-show {
+  z-index: 999 !important;
+  background-color: rgb(45, 39, 39, 0.4);
+}
+
 .sidebar {
   background-color: #DBDFEA;
   transform: translateX(-100%);
   z-index: 1000;
 }
 
-.sidebar-toggle {
-  z-index: 1001;
-}
-
 .sidebar-show {
   transform: translateX(0);
+}
+
+.sidebar-toggle {
+  z-index: 1001;
 }
 
 .color-purple {
@@ -749,6 +752,10 @@ video {
 @media (max-width: 768px) {
   .sidebar {
     width: 100% !important;
+  }
+
+  .sidebar-toggle span {
+    color: black !important;
   }
 }
 
@@ -767,24 +774,7 @@ video {
     line-height: 2.25rem;
   }
 
-  .sm\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .sm\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
   }

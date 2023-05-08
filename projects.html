@@ -17,28 +17,30 @@
 <button class="sidebar-toggle absolute right-5 top-5">
   <span class="material-symbols-outlined icon-xl">menu</span>
 </button>
-<aside class="sidebar shadow-xl h-screen absolute duration-300 ease-in-out top-0 left-0" style="width: 400px;">
-  <div class="sidebar-header py-10 flex flex-col gap-2">
-    <a href="index.html"><img src="./logo.png" alt="logo" class="logo mix-blend-multiply mx-auto" style="width: 200px"></a>
+<aside class="sidebar-overlay w-full h-full absolute top-0 left-0">
+  <div class="sidebar shadow-xl h-screen absolute duration-300 ease-in-out top-0 left-0" style="width: 400px;">
+    <div class="sidebar-header py-10 flex flex-col gap-2">
+      <a href="index.html"><img src="./logo.png" alt="logo" class="logo mix-blend-multiply mx-auto" style="width: 200px"></a>
+    </div>
+    <ul class="links">
+      <li class="flex flex-row items-center gap-2 ps-2 border-y-2 border-slate-300">
+        <span class="material-symbols-outlined icon-xl text-slate-500">home</span>
+        <a href="index.html" class="color-purple hover:text-slate-400 duration-200 text-3xl my-4">Home</a>
+      </li>
+      <li class="flex flex-row items-center gap-2 ps-2 border-b-2 border-slate-300">
+        <span class="material-symbols-outlined icon-xl text-slate-500">public</span>
+        <a href="about.html" class="color-purple hover:text-slate-400 duration-200 text-3xl my-4">About</a>
+      </li>
+      <li class="flex flex-row items-center gap-2 ps-2 border-b-2 border-slate-300">
+        <span class="material-symbols-outlined icon-xl text-slate-500">rocket_launch</span>
+        <a href="projects.html" class="color-purple hover:text-slate-400 duration-200 text-3xl my-4">Projects</a>
+      </li>
+      <li class="flex flex-row items-center gap-2 ps-2 border-b-2 border-slate-300">
+        <span class="material-symbols-outlined icon-xl text-slate-500">chat</span>
+        <a href="contact.html" class="color-purple hover:text-slate-400 duration-200 text-3xl my-4">Contact</a>
+      </li>
+    </ul>
   </div>
-  <ul class="links">
-    <li class="flex flex-row items-center gap-2 ps-2 border-y-2 border-slate-300">
-      <span class="material-symbols-outlined icon-xl text-slate-500">home</span>
-      <a href="index.html" class="color-purple hover:text-slate-400 duration-200 text-3xl my-4">Home</a>
-    </li>
-    <li class="flex flex-row items-center gap-2 ps-2 border-b-2 border-slate-300">
-      <span class="material-symbols-outlined icon-xl text-slate-500">public</span>
-      <a href="about.html" class="color-purple hover:text-slate-400 duration-200 text-3xl my-4">About</a>
-    </li>
-    <li class="flex flex-row items-center gap-2 ps-2 border-b-2 border-slate-300">
-      <span class="material-symbols-outlined icon-xl text-slate-500">rocket_launch</span>
-      <a href="projects.html" class="color-purple hover:text-slate-400 duration-200 text-3xl my-4">Projects</a>
-    </li>
-    <li class="flex flex-row items-center gap-2 ps-2 border-b-2 border-slate-300">
-      <span class="material-symbols-outlined icon-xl text-slate-500">chat</span>
-      <a href="contact.html" class="color-purple hover:text-slate-400 duration-200 text-3xl my-4">Contact</a>
-    </li>
-  </ul>
 </aside>
 <div class="container w-4/5 h-screen mx-auto">
   <div class="content top-1/2 -translate-y-1/2 relative font-bold uppercase text-center">
